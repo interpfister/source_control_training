@@ -1,6 +1,6 @@
 "use strict";
 
 function calculateTip(baseAmount) {
-	return 5;
+	return (.2 * baseAmount);
 }
 
