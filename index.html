@@ -2,8 +2,25 @@
 <head>
 </head>
 <body>
+<script src="tip.js" type="text/javascript"></script>
+<script src="total.js" type="text/javascript"></script>
 <script type="text/javascript">
-alert("hello");
+
+window.onload = function() {
+	var number, tip, total;
+	
+	alert("Let's calculate your 20% tip.");
+
+	baseAmount = prompt("How much is the bill?");
+
+	tip = calculateTip(baseAmount);
+
+	total = calculateTotal(baseAmount, tip);
+	
+	alert("Your 20% tip is: " + tip);
+
+	alert("Your total is: " + total);
+};
 
 </script>
 </body>
